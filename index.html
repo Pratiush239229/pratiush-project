@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="editor-container">
+    <h1>Text Editor</h1>
+    
+    <!-- Formatting Buttons -->
+    <div class="toolbar">
+      <button onclick="toggleBold()">Bold</button>
+      <button onclick="toggleItalic()">Italic</button>
+      <button onclick="toggleUnderline()">Underline</button>
+      <button onclick="clearFormatting()">Clear Formatting</button>
+    </div>
+
+    <!-- Text Area for Editing -->
+    <div contenteditable="true" id="editor" class="editor"></div>
+
+    <!-- Conversion Options -->
+    <div class="conversion">
+      <button onclick="convertText('camel')">Convert to camelCase</button>
+      <button onclick="convertText('snake')">Convert to snake_case</button>
+      <button onclick="convertText('pascal')">Convert to PascalCase</button>
+    </div>
+
+    <!-- Text Analysis -->
+    <div class="analysis">
+      <p>Word Count: <span id="wordCount">0</span></p>
+      <p>Character Count: <span id="charCount">0</span></p>
+      <p>Estimated Reading Time: <span id="readTime">0</span> minutes</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

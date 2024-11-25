@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .editor-container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button {
+    padding: 8px 12px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .editor {
+    margin-top: 20px;
+    min-height: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fafafa;
+  }
+  
+  .analysis {
+    margin-top: 20px;
+  }
+  
+  .analysis p {
+    margin: 5px 0;
+  }
+  
